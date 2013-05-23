@@ -18,12 +18,12 @@ Reemplaza el nombre *project_name* al final de la cadena por el del proyecto.
 Instrucciones
 =============
 
-Para Publicar, utiliza una directiva equivalente a esta para establecer la configuración a ambiente de producción
+* Para Publicar, utiliza una directiva equivalente a esta para establecer la configuración a ambiente de producción
 
-    $ export DJANGO_SETTINGS_MODULE={{ project_name }}.settings.production
+    export DJANGO_SETTINGS_MODULE={{ project_name }}.settings.production
 
-Coloca tu favicon.ico en /static
+* Coloca tu favicon.ico en /static
 
-Las imagenes (img), javascripts (js), hojas de estilos (css) y otros recursos estaticos del sitio, van en /static en sus correspondientes carpetas.
+* Las imagenes (img), javascripts (js), hojas de estilos (css) y otros recursos estaticos del sitio, van en /static en sus correspondientes carpetas.
 
-En /media se colocan los archivos subidos
+* En /media se colocan los archivos subidos
