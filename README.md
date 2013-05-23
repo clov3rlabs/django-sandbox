@@ -6,12 +6,12 @@ Instalación
 Para github
 -----------
 
-    django-admin.py startproject --template=https://github.com/clov3rlabs/django-sandbox/zipball/master --extension=py,rst project_name
+    django-admin.py startproject --template=https://github.com/clov3rlabs/django-sandbox/zipball/master --extension=py,rst,gitignore,example project_name
 
 Para bitbucket
 --------------
 
-    django-admin.py startproject --template=https://bitbucket.org/clov3rlabs/django-sandbox/zipball/master --extension=py,rst project_name
+    django-admin.py startproject --template=https://bitbucket.org/clov3rlabs/django-sandbox/get/master.zip --extension=py,rst,gitignore,example project_name
 
 Reemplaza el nombre *project_name* al final de la cadena por el del proyecto.
 
