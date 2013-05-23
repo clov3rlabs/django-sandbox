@@ -20,7 +20,7 @@ Instrucciones
 
 * Para Publicar, utiliza una directiva equivalente a esta para establecer la configuración a ambiente de producción
 
-    export DJANGO_SETTINGS_MODULE={{ project_name }}.settings.production
+        export DJANGO_SETTINGS_MODULE={{ project_name }}.settings.production
 
 * Coloca tu favicon.ico en /static
 
