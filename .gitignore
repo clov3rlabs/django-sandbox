@@ -1,0 +1,29 @@
+# Mac OS X Finder and whatnot
+.DS_Store
+
+## generic files to ignore
+*~
+*.lock
+*.swp
+*.out
+
+# archivos creados por los IDEs Eclipse, Zend Studio, Netbeans y PHPStorm
+.buildpath
+.project
+.settings
+nbproject
+.idea
+
+# Django
+*.log
+*.pot
+*.py[co]
+local_settings.py
+
+# PyCharm
+# http://www.jetbrains.com/pycharm/webhelp/project.html
+.idea
+.iml
+
+*/settings/parameters.py
+

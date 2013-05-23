@@ -1,0 +1,9 @@
+# Este archivo reune todas las apps de terceros requeridas
+# para correr el proyecto. Puedes instalar todas estas apps
+# usando pip. Ejemplo::
+#
+#     pip install -r requirements.txt
+
+Django==1.5.1
+psycopg2==2.5
+

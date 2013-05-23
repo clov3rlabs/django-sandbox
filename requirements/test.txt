@@ -1,0 +1,4 @@
+# Este archivo reune todas las apps de terceros requeridas
+# para correr el proyecto en ambiente de pruebas
+
+-r base.txt

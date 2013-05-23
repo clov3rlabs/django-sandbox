@@ -1,0 +1,10 @@
+# Este archivo reune todas las apps de terceros requeridas
+# para correr el proyecto. Puedes instalar todas estas apps
+# usando pip. Ejemplo::
+#
+#     pip install -r requirements.txt
+
+# Para instalar todas las dependencias de desarrollo
+# -r requirements/development.txt
+# Por defecto es producción
+-r requirements/production.txt
