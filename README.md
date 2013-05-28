@@ -27,3 +27,10 @@ Instrucciones
 * Las imagenes (img), javascripts (js), hojas de estilos (css) y otros recursos estaticos del sitio, van en /static en sus correspondientes carpetas.
 
 * En /media se colocan los archivos subidos
+
+Tecnologías
+===========
+
+- Bootstrap 2.3.2
+- LESS 1.3.3
+- Django 1.5
