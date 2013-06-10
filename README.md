@@ -36,39 +36,38 @@ Apache
 
 Recomendamos configuren apache de la siguiente manera.
 
-  <VirtualHost *:80>
-    ServerName  example.com
-    ServerAlias www.example.com
-    #ServerAlias www1.example.com
+    <VirtualHost *:80>
+        ServerName  example.com
+        ServerAlias www.example.com
+        #ServerAlias www1.example.com
 
-    DocumentRoot /path-to/project-root/public
+        DocumentRoot /path-to/project-root/public
 
-    ErrorLog /path-to/project-root/logs/_error.log
-    CustomLog /path-to/project-root/logs/_access.log combined
+        ErrorLog /path-to/project-root/logs/_error.log
+        CustomLog /path-to/project-root/logs/_access.log combined
 
-    Alias /assets /path-to/project-root/assets
-    Alias /media /path-to/project-root/media
+        Alias /assets /path-to/project-root/assets
+        Alias /media /path-to/project-root/media
 
-    SetEnv DJANGO_SETTINGS_MODULE {{ project_name }}.settings.production
-    WSGIDaemonProcess {{ project_name }} processes=2 maximum-requests=500 threads=15 display-name=%{GROUP} python-path=/path-to/project-root:/path-to-python/site-packages
-    WSGIProcessGroup {{ project_name }}
-    WSGIScriptAlias / /path-to/project-root/{{ project_name }}/wsgi.py
+        WSGIDaemonProcess {{ project_name }} processes=2 maximum-requests=500 threads=15 display-name=%{GROUP} python-path=/path-to/project-root:/path-to-python/site-packages
+        WSGIProcessGroup {{ project_name }}
+        WSGIScriptAlias / /path-to/project-root/{{ project_name }}/wsgi.py
 
-    <Directory /path-to/project-root/{{ project_name }}/assets>
-      Order allow,deny
-      Allow from all
-    </Directory>
-    <Directory /path-to/project-root/{{ project_name }}/media>
-      Order allow,deny
-      Allow from all
-    </Directory>
-    <Directory /path-to/project-root/{{ project_name }}>
-      <Files wsgi.py>
-        Order allow,deny
-        Allow from all
-      </Files>
-    </Directory>
-  </VirtualHost>
+        <Directory /path-to/project-root/{{ project_name }}/assets>
+            Order allow,deny
+            Allow from all
+        </Directory>
+        <Directory /path-to/project-root/{{ project_name }}/media>
+            Order allow,deny
+            Allow from all
+        </Directory>
+        <Directory /path-to/project-root/{{ project_name }}>
+            <Files wsgi.py>
+                Order allow,deny
+                Allow from all
+            </Files>
+        </Directory>
+    </VirtualHost>
 
 Reemplazar:
 
