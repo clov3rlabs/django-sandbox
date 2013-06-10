@@ -1,4 +1,4 @@
-# Django settings for {{ project_name }} project.
+# Django settings for django_project project.
 try:
     from parameters import *
 except ImportError, e:
@@ -11,15 +11,7 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
-)
-
 MANAGERS = ADMINS
-
-# Hosts/domain names that are valid for this site; required if DEBUG is False
-# See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -100,10 +92,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = '{{ project_name }}.urls'
+ROOT_URLCONF = 'ondalocal.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
+WSGI_APPLICATION = 'ondalocal.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -125,7 +117,16 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 
     # Third-Party Apps
+    'django.contrib.flatpages',
     'south',
+    'django_contactme',
+
+    # My Extra Apps
+    'tagging',
+    'articles',
+    'weblinks',
+    'agenda',
+    'audioproductions',
 
     # App Core
     'core',
